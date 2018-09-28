@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: transparent;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      background-image: url('img/bg.jpg');
+    }
+
+    ul {
+      padding: 0;
+      height: 100%;
+      background: transparent;
+    }
+
+    ul li {
+      list-style: none;
+      padding: 0;
+      background: transparent;
+    }
+
+    li.main-li {
+      height: 10%;
+      padding: 10%;
+    }
+
+    li.main-li1 {
+      height: 20%;
+    }
+
+    li.main-li2 {
+      height: 30%;
+    }
+
+    li.main-li3 {
+      height: 40%;
+      padding: 0 10% 10% 10%;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide ul li {
+      display: none;
+    }
+
+    .times {
+      display: block;
+      margin: 0px 0;
+    }
+
+    .times ul {
+      margin-left: 25px;
+      border-left: 4px solid #ddd;
+    }
+
+    .times ul li {
+      width: 100%;
+      margin-left: -12px;
+      line-height: 20px;
+      font-weight: narmal;
+    }
+
+    .times ul li b {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border: 2px solid #555;
+      margin: 5px;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      overflow: hidden;
+      display: inline-block;
+      float: left;
+    }
+
+    .times ul li span {
+      padding-left: 7px;
+      font-size: 20px;
+      line-height: 20px;
+      color: #555;
+    }
+
+    .times ul li:hover b {
+      border: 2px solid #ff6600;
+    }
+
+    .times ul li:hover span {
+      color: #ff6600;
+    }
+
+    .times ul li p {
+      padding-left: 15px;
+      font-size: 22px;
+      line-height: 25px;
+    }
+
+    .calendar-icon,
+    .location-icon {
+      max-height: 50px;
+      max-width: 50px;
+    }
+
+    .location-icon {
+      margin-right: -20px;
+    }
+
+    .content-wrapper {
+      float: left;
+      margin-left: 30px;
+    }
+
+    .content-wrapper2 {
+      float: right;
+      margin-right: 20%;
+    }
+
+    .content-wrapper2 img {
+      float: left;
+    }
+
+    .content-wrapper3 {
+      float: left;
+      margin-left: 10%;
+    }
+
+    .content-wrapper2-img-content {
+      max-width: 200px;
+      margin-right: -40px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .date {
+      font-size: 22px;
+      font-weight: bolder;
+    }
+
+    .placeholder {
+      margin: 10px 0;
+    }
+
+    .content-wrapper3 img {
+      max-width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-07-28</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/timg.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>城西银泰</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>略囧的第一次相识</span>
+              <img src="img/jiong.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-08-05</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/xizihu.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>西子湖四季酒店</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>第一次陪你过生日</span>
+              <img src="img/cake.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-08-15</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/dyy.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>美影国际影城</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>第一次一起看电影</span>
+              <img src="img/jlls.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-08-17</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/hk.png" />
+              <img class="location-icon" src="img/location.png" />
+              <span>物联网街</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>正式求爱</span>
+              <img src="img/mg.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-08-23</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/jsjn.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>金色江南</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>小冷战。。。</span>
+              <img src="img/dbq.gif" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-08-25</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/blllxg.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>罗兰香谷</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>各种装各种搞</span>
+              <img src="img/wsj.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-08-28</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/lfd.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>理发店</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>一起理发</span>
+              <img src="img/lf.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-09-04</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/qzw.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>xxx</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>崩溃的一天</span>
+              <img src="img/down.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-09-09</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/ad.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>金色江南→罗兰香谷</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>每天要起的更早了</span>
+              <img src="img/qc.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-09-21</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/xhfd.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>黄山、宏村</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li3">
+            <div class="content-wrapper content-wrapper3">
+              <span>第一次一起出游</span>
+              <img src="img/sd.jpg" />
+            </div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+        <ul>
+          <li><b></b></li>
+          <li class="main-li main-li1">
+            <div class="content-wrapper">
+              <img class="calendar-icon" src="img/calendar-512.png" />
+              <span class="date">2019-09-28</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li class="main-li main-li2">
+            <div class="content-wrapper content-wrapper2">
+              <img class="content-wrapper2-img-content" src="img/sxb.jpg" />
+              <img class="location-icon" src="img/location.png" />
+              <span>相识两个月</span>
+            </div>
+            <div class="clear"></div>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="swiper-slide times">
+          <ul>
+            <li><b></b></li>
+            <li class="main-li main-li1">
+              <div class="content-wrapper">
+                <img class="calendar-icon" src="img/calendar-512.png" />
+                <span class="date">2019-09-28</span>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="main-li main-li2">
+              <div class="content-wrapper content-wrapper2">
+                <span>老婆，我爱你，期待未来</span>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="main-li main-li3">
+              <div class="content-wrapper content-wrapper3">
+                <img src="img/future.jpg" />
+              </div>
+              <div class="clear"></div>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <video src="audio/so_lucky.mp3" autoplay="true" style="display:none"/>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var global_active_index = null;
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      fadeEffect: {
+        crossFade: true
+      },
+      on: {
+        transitionStart: function () {
+          var i = 1;
+          global_active_index = this.activeIndex;
+
+          $(this.slides[this.activeIndex]).find("ul li").each(function (i) {
+            $(this).delay(100 * i).fadeIn(1000 * (i + 1));
+            i++;
+          });
+        },
+        slideChange: function () {
+          if (!!global_active_index) {
+            $(this.slides[this.activeIndex]).find("ul li").css("display", "none");
+          }
+        }
+      }
+    })
+
+    window.onload = function () {
+      //initialize swiper when document ready
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true
+      })
+    };
+  </script>
+</body>
+
+</html>
